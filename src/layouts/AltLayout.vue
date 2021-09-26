@@ -2,10 +2,10 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
+        <g-link exact to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
+        <g-link exact class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/about/">About</g-link>
         <g-link class="nav__link" to="/products/">Products</g-link>
       </nav>
@@ -28,6 +28,10 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
+}
+
+.active {
+  color: red;
 }
 
 .layout {
