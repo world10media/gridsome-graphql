@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <p>&copy; {{getCurrentYear}} by <a href="href">MySleekDesigns</a></p>
+        <p>&copy;{{getCurrentYear}} by <a href="href">MySleekDesigns</a></p>
     </footer>
 </template>
 
