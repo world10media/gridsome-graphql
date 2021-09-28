@@ -13,7 +13,15 @@ module.exports = {
       options: {
         typeName: 'Post',
         path: './content/posts/**/*.md',
-        route: '/posts/:slug'
+        route: '/posts/:slug',
+        refs: {
+          // Create a Tag content type and its nodes automatically.
+          tags: {
+            typeName: 'Tag',
+            route: '/tags/:id',
+            create: true
+          }
+        }
       }
     }
   ],
