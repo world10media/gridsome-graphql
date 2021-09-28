@@ -7,5 +7,17 @@
 module.exports = {
   siteName: "Vue Couture",
   siteDescription: "Your one stop shop for finding all manner of stylish, luxury apparel and accessories",
-  plugins: []
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: './content/posts/**/*.md',
+        // route: '/posts/:title'
+      }
+    }
+  ],
+  templates: {
+    Post: '/posts/:title'
+  }
 }
